@@ -19,14 +19,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Prepare upload
+        run: |
+          mkdir -p site
+          cp -r assets site/
+          cp -r css site/
+          cp -r js site/
+          cp index.html site/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: |
-            assets
-            css
-            js
-            index.html
+          path: 'site''
 
       - name: Deploy to GitHub Pages
         id: deployment
