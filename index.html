@@ -1,137 +1,76 @@
 <!DOCTYPE html>
-<html lang="pl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Katarzyna Parzych</title>
-  <!-- Bootstrap 5 -->
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-        crossorigin="anonymous" />
-  <style>
-    :root {
-      --pink-light:  #fff0f3;
-      --pink-mid:    #ffb3c6;
-      --pink-accent: #ff4d6d;
-      --pink-dark:   #c9184a;
-      --text-dark:   #3d0c1f;
-    }
-
-    /* ── Layout ── */
-    body {
-      background-color: var(--pink-light);
-      color: var(--text-dark);
-      min-height: 100vh;
-      margin: 0;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem 1rem;
-      box-sizing: border-box;
-    }
-
-    .page-wrapper {
-      width: 100%;
-      max-width: 620px;
-    }
-
-    /* ── Card ── */
-    .card {
-      border: none;
-      border-radius: 1.5rem;
-      background-color: #fff8fa;
-      box-shadow: 0 8px 32px rgba(201, 24, 74, 0.12);
-      padding: 2.5rem 2rem;
-    }
-
-    /* ── Photo ── */
-    .photo-section {
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-
-    .photo-wrapper {
-      background: linear-gradient(135deg, var(--pink-mid), var(--pink-accent));
-      border-radius: 50%;
-      padding: 5px;
-      display: inline-block;
-    }
-
-    .photo-wrapper img {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #fff8fa;
-      display: block;
-    }
-
-    /* ── Name ── */
-    h1 {
-      color: var(--pink-dark);
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      text-align: center;
-      margin: 0 0 1rem;
-      font-size: 2rem;
-    }
-
-    /* ── Divider ── */
-    .divider {
-      border: none;
-      height: 3px;
-      background: linear-gradient(to right, var(--pink-mid), var(--pink-accent), var(--pink-mid));
-      border-radius: 2px;
-      margin: 0 0 1.25rem;
-    }
-
-    /* ── Bio ── */
-    .bio-text {
-      font-size: 1.05rem;
-      line-height: 1.8;
-      color: var(--text-dark);
-      margin: 0;
-      text-align: justify;
-      hyphens: auto;
-    }
-  </style>
-</head>
-<body>
-  <div class="page-wrapper">
-    <div class="card">
-
-      <!-- Photo -->
-      <div class="photo-section">
-        <div class="photo-wrapper">
-          <img
-            src="https://placehold.co/180x180/ffb3c6/c9184a?text=KP"
-            alt="Zdjęcie Katarzyny Parzych"
-          />
-        </div>
-      </div>
-
-      <!-- Name -->
-      <h1>Katarzyna Parzych</h1>
-
-      <hr class="divider" />
-
-      <!-- BIO -->
-      <p class="bio-text" lang="pl">
-        Absolwentka Politechniki Warszawskiej, magister inżynier, nauczycielka matematyki
-        w szkole podstawowej oraz wychowawczyni z pasją do łączenia myślenia matematycznego
-        z nowoczesną pedagogiką. W swojej pracy konsekwentnie udowadnia, że matematyka może
-        być jednocześnie ciekawa, bliska uczniowi i osadzona we współczesnym świecie
-        technologii. Interesuje się edukacją i pedagogiką matematyczną oraz wykorzystaniem
-        technologii informacyjno-komunikacyjnych, w szczególności narzędzi sztucznej
-        inteligencji, w procesie uczenia się i nauczania matematyki. W codziennej praktyce
-        szkolnej chętnie sięga po innowacyjne rozwiązania dydaktyczne, dbając o to, by
-        lekcje były angażujące i dalekie od schematów.
-      </p>
-
-    </div>
-  </div>
-
-</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Full Width Pics - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#!"><!--Start Bootstrap--></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<!--                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>-->
+                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+<!--                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header - set the background image for the header in the line below-->
+        <header class="py-5 bg-image-full" style="background-image: url('assets/v748-toon-106.jpg')">
+            <div class="text-center my-5">
+                <img class="rounded-circle mb-4" src="assets/photo.jpg" alt="..." style="width:200px;height:200px;object-fit:contain;" />
+                                <h1 class="text-dark fs-3 fw-bolder">Katarzyna Parzych</h1>
+<!--                                <h1 class="text-white fs-3 fw-bolder">Full Width Pics</h1>-->
+<!--                <p class="text-white-50 mb-0">Landing Page Template</p>-->
+            </div>
+        </header>
+        <!-- Content section-->
+        <section class="py-5">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+<!--                        <h2>Katarzyna Parzych</h2>-->
+                        <p class="lead">Absolwentka Politechniki Warszawskiej, magister inżynier, nauczycielka matematyki w szkole podstawowej oraz wychowawczyni z pasją do łączenia myślenia matematycznego z nowoczesną pedagogiką. </p>
+                        <p class="mb-0">W swojej pracy konsekwentnie udowadnia, że matematyka może być jednocześnie ciekawa, bliska uczniowi i osadzona we współczesnym świecie technologii. Interesuje się edukacją i pedagogiką matematyczną oraz wykorzystaniem technologii informacyjno-komunikacyjnych, w szczególności narzędzi sztucznej inteligencji, w procesie uczenia się i nauczania matematyki. W codziennej praktyce szkolnej chętnie sięga po innowacyjne rozwiązania dydaktyczne, dbając o to, by lekcje były angażujące i dalekie od schematów. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Image element - set the background image for the header in the line below-->
+<!--        <div class="py-5 bg-image-full" style="background-image: url('assets/v748-toon-106.jpg')">-->
+<!--            &lt;!&ndash; Put anything you want here! The spacer below with inline CSS is just for demo purposes!&ndash;&gt;-->
+<!--            <div style="height: 20rem"></div>-->
+<!--        </div>-->
+        <!-- Content section-->
+<!--        <section class="py-5">-->
+<!--            <div class="container my-5">-->
+<!--                <div class="row justify-content-center">-->
+<!--                    <div class="col-lg-6">-->
+<!--                        <h2>Engaging Background Images</h2>-->
+<!--                        <p class="lead">The background images used in this template are sourced from Unsplash and are open source and free to use.</p>-->
+<!--                        <p class="mb-0">I can't tell you how many people say they were turned off from science because of a science teacher that completely sucked out all the inspiration and enthusiasm they had for the course.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; <a href="https://ekreator.com.pl">eKreator</a> 2026</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
